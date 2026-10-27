@@ -4,6 +4,9 @@ import streamlit as st
 
 st.set_page_config(page_title="Vomerão", layout="wide", page_icon="👟")
 
+# Caminho do arquivo
+caminho_arquivo = r"Tabela 1.1.2.xls"
+
 
 @st.cache_data
 def carregar_dados(caminho_arquivo):
@@ -41,7 +44,7 @@ def carregar_dados(caminho_arquivo):
 
 
 # Caminho do arquivo
-caminho_arquivo = r"H:\python\3 ETAPA\exemplo\Tabela 1.1.2.xls"
+caminho_arquivo = r"Tabela 1.1.2.xls"
 
 try:
     df = carregar_dados(caminho_arquivo)
